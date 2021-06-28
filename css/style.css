@@ -21,12 +21,29 @@ ul {
 img {
     max-width: 100%;
 }
-/*  CABEÇALHO */
-.cabecalho {
+/* CONTAINER */
+.container {
     width: 100%;
     float: left;
     padding: 3% 4%;
+    text-align: center;
 }
+/* BG COLOR */
+.bg-gradiente {
+    background: linear-gradient(to right, #ce2e3c,#da6709)
+}
+.bg-black {
+    background-color:#130400 ;
+}
+.bg-white {
+    background-color: #fff;
+}
+/* HELPERS(BOTÃO RADIUS) */
+.radius {
+    border-radius:7px;
+}
+/*  CABEÇALHO */
+
 .logo {
     width: 56px;
     height: 56px;
@@ -42,7 +59,7 @@ img {
     color: #fff;
     border-radius: 56px;
     cursor: pointer;
-    background: linear-gradient(to right, #ce2e3c,#da6709)
+    
 }
 /* MENU */
 .menu {
@@ -79,10 +96,6 @@ img {
 }
 /* BANNER */
 .banner {
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding: 3% 4%;
     background: url(../img/bg.jpg) no-repeat fixed;
 }
 .title {
@@ -104,38 +117,25 @@ img {
 .buttons i {
     float:right;
 }
-.btn-cadastrar {
+.btn {
     width: 100%;
     font-size: 1.5em;
     text-align: left;
     cursor:pointer;
     padding: 5%;
-    border-radius: 10px;
-    background-color: #fff;
-    color:#130400;
+}
+.btn-cadastrar {    
+   color:#130400;
 }
 .btn-sobre {
-    width: 100%;
-    font-size: 1.5em;
-    text-align: left;
-    cursor:pointer;
-    padding: 5%;
-    border-radius: 10px;
-    background-color:#130400 ;
     color:#fff;
     margin-top: 2%;
 }
 /* SERVIÇOS */
-.servicos {
-    width: 100%;
-    float:left;
-    padding: 3% 4%;
-}
+
 .servico {
     width: 100%;
-    background-color: #fff;
     text-align:left;
-    border-radius: 7px;
     margin-bottom: 3%;;
 }
 .servico img {
@@ -159,13 +159,7 @@ img {
     line-height: 1.5em;
 }
 /* NEWSLETTER */
-.newsletter {
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding: 3% 4%;
-    background-color:#130400;
-}
+
 .newsletter h2 {
     font-size: 1.5em;
     color: #fff;
@@ -179,19 +173,32 @@ img {
 }
 .newsletter input {
     width: 100%;
-    background-color: #130400;
     color: #fff;
     border: 1px solid rgba(255,255,255,0.3);
     padding:5%;
-    border-radius:5px;
 }
 .newsletter button {
     width: 100%;
-    background-color:#fff ;
     color: #130400;
     border: 1px solid rgba(255,255,255,0.3);
     padding:5%;
-    border-radius:5px;
     cursor: pointer;
     margin-top: 2%;
+}
+/* FOOTER */
+
+.social-icons a {
+    font-size: 1.5em;
+    color: rgba(255,255,255,0.7);
+    margin-right: 3%;
+}
+.social-icons a:last-child {
+    margin-right: 0;
+}
+.social-icons a:hover { 
+    color: rgb(255,255,255);    
+}
+.copyright  {
+    margin-top: 2%;
+    color: rgba(255,255,255,0.7);
 }
